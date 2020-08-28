@@ -1,3 +1,9 @@
+# SKAlertDialog Example
+```dart
+import 'package:flutter/material.dart';
+import 'package:sk_alert_dialog/sk_alert_dialog.dart';
+
+void main() => runApp(AlertView());
 
 class AlertView extends StatefulWidget {
   @override
@@ -334,3 +340,4 @@ class AlertCardState extends State<AlertCard> {
     );
   }
 }
+```
