@@ -156,7 +156,6 @@ import 'package:sk_alert_dialog/sk_alert_dialog.dart';
     SKAlertDialog.show(
         context: context,
         type: SKAlertType.custom,
-        title: UtilsImporter().stringUtils.radio_button_alert_title,
         customWidget: customWidget(),
       );
 ```

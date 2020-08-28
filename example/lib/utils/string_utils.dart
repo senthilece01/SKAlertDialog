@@ -35,12 +35,6 @@ class StringUtils {
 
   // 7
   // Custom Widget
-  String sign_in = 'Sign in';
-  String welcome = 'Welcome to';
-  String sigin_descrip =
-      'Enter your Email address and Password for sign in. Enjoy your shopping :)';
-  String forgot_pswd = 'Forgot Password';
-  String email_address = 'Email Address';
-  String your_password = 'Your Password';
-  String done = 'Done';
+  String thank_you = 'Thank you for reviewing the package';
+  String the_end = 'The End !';
 }

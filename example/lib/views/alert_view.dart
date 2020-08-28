@@ -206,47 +206,19 @@ class AlertViewState extends State<AlertView> {
       SKAlertDialog.show(
         context: context,
         type: SKAlertType.custom,
-        title: UtilsImporter().stringUtils.radio_button_alert_title,
-        customWidget: customWidget1(),
+        customWidget: customWidget(),
       );
     }
   }
 
   Widget customWidget() {
-    return new Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        SizedBox(height: 10),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            FlatButton(
-              onPressed: () {},
-              child: Text(
-                UtilsImporter().stringUtils.forgot_pswd,
-                style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: Theme.of(context).primaryColorDark.withOpacity(0.7),
-                    fontSize: 20),
-              ),
-            )
-          ],
-        ),
-        SizedBox(height: 10),
-        _ShowEmailInput(),
-        _showForgotPswdButton(),
-      ],
-    );
-  }
-
-  Widget customWidget1() {
     return new Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(
-              'Thank you for reviewing the package',
+              UtilsImporter().stringUtils.thank_you,
               style: TextStyle(
                   fontWeight: FontWeight.w400,
                   color: Theme.of(context).primaryColorDark.withOpacity(0.7),
@@ -262,7 +234,7 @@ class AlertViewState extends State<AlertView> {
                     Navigator.of(context).pop();
                   },
                   child: Text(
-                    'The End!',
+                    UtilsImporter().stringUtils.the_end,
                     style: TextStyle(
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
@@ -273,67 +245,6 @@ class AlertViewState extends State<AlertView> {
             ),
           ],
         ));
-  }
-
-  Widget _ShowEmailInput() {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 0.0),
-      child: new TextField(
-        cursorColor: Theme.of(context).primaryColor,
-        controller: emailController,
-        maxLines: 1,
-        keyboardType: TextInputType.emailAddress,
-        focusNode: _emailAddressFocus,
-        textInputAction: TextInputAction.next,
-        autofocus: true,
-        onSubmitted: (term) {},
-        style: new TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 16.0,
-            color: Theme.of(context).primaryColorDark),
-        decoration: InputDecoration(
-            labelText: UtilsImporter().stringUtils.email_address,
-            labelStyle: TextStyle(
-              color: UtilsImporter().colorUtils.greycolor,
-            ),
-            hintStyle: TextStyle(
-              color: UtilsImporter().colorUtils.greycolor,
-            ),
-            border: new UnderlineInputBorder(
-                borderSide:
-                    new BorderSide(color: Theme.of(context).primaryColor))),
-      ),
-    );
-  }
-
-  Widget _showForgotPswdButton() {
-    final GestureDetector forgotPswdButtonWithGesture = new GestureDetector(
-      onTap: _forgotPswdBtnTapped,
-      child: new Container(
-        height: 40.0,
-        decoration: new BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            borderRadius: new BorderRadius.all(Radius.circular(6.0))),
-        child: new Center(
-          child: new Text(
-            UtilsImporter().stringUtils.done.toUpperCase(),
-            style: new TextStyle(
-              color: Colors.white,
-              fontSize: 20.0,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ),
-      ),
-    );
-    return new Padding(
-        padding:
-            EdgeInsets.only(left: 20.0, right: 20.0, top: 20.0, bottom: 20.0),
-        child: forgotPswdButtonWithGesture);
-  }
-
-  _forgotPswdBtnTapped() {
-    Navigator.of(context).pop();
   }
 }
 

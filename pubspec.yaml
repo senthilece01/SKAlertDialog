@@ -1,8 +1,8 @@
 name: sk_alert_dialog
-description: A new Flutter package.
+description: A highly customizable, powerful and easy-to-use alert dialog for Flutter.
 version: 0.0.1
 author: Senthil Kumar<senthilece01@gmail.com>
-homepage:
+homepage: https://github.com/senthilece01/SKAlertDialog.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
