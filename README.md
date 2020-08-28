@@ -1,6 +1,6 @@
 # SKAlertDialog
  
-A library that walks a user through multiple on-boarding screens in a simple and easy way
+A highly customizable, powerful and easy-to-use alert dialog for Flutter.
   
  [![Flutter](https://img.shields.io/badge/Platform-Flutter-blue.svg)](https://flutter.dev/)
  [![pub package](https://img.shields.io/badge/pub-1.0.0-blueviolet.svg)](https://pub.dev/packages/status_alert)
