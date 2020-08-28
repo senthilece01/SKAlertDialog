@@ -131,6 +131,5 @@ class SKAlertMessage extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

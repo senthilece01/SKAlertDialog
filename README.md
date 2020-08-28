@@ -28,7 +28,7 @@ You just need to add `sk_alert_dialog` as a [dependency in your pubspec.yaml fil
 
 ```yaml
 dependencies:
-sk_alert_dialog: ^0.0.2
+sk_alert_dialog: ^1.0.0
 ```
 
 ## Usage
